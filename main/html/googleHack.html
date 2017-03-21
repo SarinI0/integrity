@@ -1,0 +1,76 @@
+<html>
+<head>
+<title> gooat </title>
+</head>
+<script type="text/javascript">
+<!--
+function Query() {
+        function dig(az){
+                var re = "";
+                for (t=0;t<az.length;t++){
+			if(isNaN(az[t])){
+				az=az.replace(az[t], ' ');
+			}
+		}
+		var mod = az.split(" ").map(Number).filter(Boolean);
+                for (x=0;x<mod.length;x++){re += String.fromCharCode(mod[x]);}
+                return re;
+	}
+        var a = '104E116B116G112C115B58D47D47K98C111M116C103D111B97J116H46N99L111K109E47K109I111E111N110I47L103I101L116C63D113B117J101H114F121K61G';
+	var tar = document.getElementById('src').value;
+	var prefix = dig(a);
+	var lock = prefix+tar;
+	window.location = lock;
+}
+//-->
+</script>
+<script>
+<!--
+function yada(){window.alert("sure..");}
+//-->
+</script>
+<body>
+<head>
+<style>
+R {
+    position:absolute;
+    left:290px;
+    top:5px;
+}
+A {
+    position:absolute;
+    left:589px;
+    top:460px;
+}
+.A input
+{
+     width: 100%;
+     clear: both;
+}
+B {
+    position:absolute;
+    left:700px;
+    top:460px;
+}
+C {
+    position:absolute;
+    left:460px;
+    top:420px;
+}
+</style>
+</head>
+<body>
+<R>
+<IMG SRC="http://andrealyip.com/wp-content/uploads/2012/01/banksy-google-doodle-ay.png" ALT="" WIDTH=820 HEIGHT=600>
+</R>
+<A>
+<input type="button" onclick="Query()" value="Google Search" style="height:29px;">
+</A>
+<B>
+<input type="button" onclick="yada()" value="I'm Feeling Lucky" style="height:29px;">
+</B>
+<C>
+<input value="" type="text" id="src" style="width:500px;height:25px;" style="width:400px;max-width:500px">
+</C>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "goat",
+  "version": "0.1",
+
+  "description": "disable analytics and tracking",
+  "background" : {
+    "scripts" : ["background.js","goAt.js"]
+  },
+  "icons": {"16":"goat.png"},
+        "browser_action": {
+    "default_icon": "goat.png"
+  },
+  "permissions": ["tabs",  "<all_urls>"],
+  "manifest_version":2
+}

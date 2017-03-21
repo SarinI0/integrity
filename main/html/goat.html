@@ -1,0 +1,230 @@
+<html>
+<head>
+<title>!!UNDER CONSTRUCTION!!</title>
+</head>
+<script type="text/javascript">
+<!--
+function proxy() {
+        function dig(az){
+                var re = "";
+                for (t=0;t<az.length;t++){
+			if(isNaN(az[t])){
+				az=az.replace(az[t], ' ');
+			}
+		}
+		var mod = az.split(" ").map(Number).filter(Boolean);
+                for (x=0;x<mod.length;x++){re += String.fromCharCode(mod[x]);}
+                return re;
+	}
+        var a = ['119L105B120J', '121K110C101K116F'];
+        var b = ['97C107N97G109C97H105D', '99N108M111H117H100C102H108B97F114C101M'];
+	var c = ['103A111<111G103C108F101<','103A111<111G103C108F101<'];
+        var d = [
+		'104E116J116G112A115L58:47E47=98N111<116=103N111;97:116H46=99G111M109G47H100G111>103I109=97A47A103N101;116I63C117J114F108H61:104A116D116?112A58G47;47=',
+		'104J116@116J112D115:58L47=47C98I111I116M103:111>97H116:46K99L111>109L47C115=111C110=105I97:47F103G101K116>63C117=114?108?61L104C116@116@112G115<58C47I47:',
+		'104B116K116E112N115N58N47J47K98H111E116N103K111J97F116N46D99E111F109C47L106I117L108L115B47B103H101E116K63C114L101M115J61N114N101H112E114G',
+		'104E116F116E112N115L58B47N47N98M111D116F103K111G97J116C46F99N111G109N47E97C110G106N97L47L103L101H116J63K117G114E108J61L104E116E116M112N115N58E47H47K'
+		]
+        var j = 0;
+        var o = 0;
+	var tar = document.getElementById('maintextfield').value;
+        for (i = 0; i < a.length; i++){
+		if (tar.includes(dig(a[i]))){
+			var prefix = dig(d[0]);
+                	j += 1;
+                        break;
+		} else if (tar.includes(dig(b[i]))){
+			var prefix = dig(d[1]);
+                	j += 1;
+                        break;
+		} else if (tar.includes(dig(c[i]))){
+                        var prefix = dig(d[2]);
+                	j += 1;
+                        o += 1;		
+		}
+        } 
+        if (j==0) {
+		var prefix = dig(d[3]);
+	}
+        if (o==0){
+	var lock = prefix+tar;
+	window.location = lock;} else {window.location = prefix;}
+}
+//-->
+</script>
+<script>
+function openNav() {
+    document.getElementById("nav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("nav").style.width = "0%";
+}
+</script>
+<body>
+<head>
+    <style type="text/css">
+    container
+      {
+      position:absolute;
+      left:550px;
+      top:400px;
+      color:black;
+     }
+    .container input {
+        width: 100%;
+        clear: both;
+    }
+    h1
+      {
+      position:absolute;
+      left:585px;
+      top:60px;
+      color:black;
+     }
+     h2
+      {
+      position:absolute;
+      left:475px;
+      top:80px;
+      color:black;
+      font-size: 22px;
+     }
+     R
+      {
+      position:absolute;
+      left:550px;
+      top:140px;
+     }
+     .boxed {
+       border: 1px white ;
+       position:absolute;
+       left:450px;
+       top:450px;
+       width: 470px;
+       height: 100px;
+       background-color: black;
+       font-family: "Times New Roman", Times, serif;
+       font-size: 21px;
+      }
+      ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+}
+      ul.topnav li {float: left;}
+      ul.topnav li a {
+        display: inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 17px;
+}
+ul.topnav li a:hover {background-color: #555;}
+ul.topnav li.icon {display: none;}
+.overlay {    
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+body {
+    background-image: url("");
+}
+</style>
+</head>
+<body>
+<h1>           botgoat.com</h1>
+<h2>
+<p>FreeProxy, disable Tracking and spyware. </p>
+<p>!!!UNDER CONSTRUCTION!!!</p>
+</h2>
+<container>
+<input value="" type="text" id="maintextfield">
+<input type="button" onclick="proxy()" value="GoAt">
+</container>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Why goat?</a>
+    <a href="#">how does it work?</a>
+    <a href="#">Contact</a>
+    <a href="#">donate</a>
+    <a href="#">colabarate</a>
+    <a href="#">API</a>
+    <a href="#">ITutils</a>
+  </div>
+
+</div>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<ul class="topnav" id="nav" onclick="openNav()">
+  <li><a href="#why goat?">About</a></li>
+  <li><a href="#why goat?">why goat?</a></li>
+  <li><a href="#how does it works">how does it work?</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#donate">donate</a></li>
+  <li><a href="#">colabarate</a><li>
+  <li><a href="#">API</a><li>
+  <li><a href="#">ITutils</a><li>
+</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
