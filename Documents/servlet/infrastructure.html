@@ -1,0 +1,339 @@
+<html>
+<head>
+<script src="jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" href="snazzy-info-window.min.css">
+<script src="snazzy-info-window.min.js"></script>
+<script>
+var infoWindow = new SnazzyInfoWindow({
+    marker: marker,
+    content: 'Snazzy!'
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93979846-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '190846544746663'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=190846544746663&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<script>
+function success_handler(position) {
+        /* Get the location data */
+        latitude = position.coords.latitude;
+        longitude = position.coords.longitude;
+        accuracy = position.coords.accuracy;
+ 
+        $.cookie("posLat", latitude);
+        $.cookie("posLon", longitude);
+        $.cookie("posAccuracy", accuracy);
+    }
+/* Check if location data is available in the cookies */
+if($.cookie("posLat")) {
+    latitude  = $.cookie("posLat");
+    longitude = $.cookie("posLon");
+    accuracy  = $.cookie("posAccuracy");
+ 
+    function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+}
+</script>
+</head>
+<body>
+<style>
+#content {
+    top: 700;
+    width:724px;
+    float:left;
+    padding-right:100px;
+    font-size: 19px
+}
+
+map{
+    position: absolute;
+    left: 310;
+    top: 1500;
+}
+ box{
+    position: absolute;
+    top: 30;
+    left: 45%;
+}
+/* navigation */
+nav {
+    background-color:gray;
+    right: 10;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.scroll {
+    overflow: auto;
+    height: 80%;
+    padding: 0;
+    margin-left: 37px;
+}
+nav {
+    display: block;
+}
+
+nav.stick {
+    top: 0;
+    z-index: 10000;
+    margin-top:12px;
+}
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+nav li {
+
+}
+
+nav li a {
+    color:rgb(50,50,50);
+    font-weight:700;
+}
+  T{
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    left: 310;
+    top: 50;
+    font-size: 45px
+}
+
+.main {
+    text-align: center;
+}
+
+a.nav-active {
+    color:#ccc;
+}
+   ar {
+    position: absolute;
+    width:100px;
+    height:100px;
+    top: 50;
+    left: 220;
+}
+   s {
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    top: 200;
+    left: 70;
+    color: "white"
+}
+  An{
+     position: absolute;
+     top: 1250;
+     left: 50;
+}
+   R{
+     position: absolute;
+     top: 800;
+     left: 800;
+     width:50px;
+     height:50px;
+}
+#foo {
+    position: absolute;
+    top: 1800;
+    left: 0;
+    min-width: 1300px;
+}
+  }
+@media (max-width: 1000), (max-height: 1000) {
+  .foo {
+    display: none;
+}}
+body {
+    background-color: #E6E6FA;
+}
+</style>
+<nav>
+<t><p> ..  </p></t>
+</nav>
+<s>
+<div id="main">
+    <img src=" " class="logoImg">
+    <div class="container clearfix">        
+        <div id="content">
+<yt>
+<p>&nbsp;</p>
+<p>ABOUT</p>
+<p>we specialize in data mining and information retrieval, ethar at big corporations level or private consultation. experts at building social networks and gathering business intelligence. if your going to make a big investment or maybe looking to expand your clients list, we will get that information for you, in a discreet, elegent manner. we offer chip and exact services, and taylor our actions according to your needs. our clients privacy is on our top concern. and our information is for your eyes only.
+join us on our journey. enjoy automated trusted funds and join a network of investors to break down the Market!</p>
+<p>&nbsp;</p><p>&nbsp;</p>
+	<p>SERVICES</p>
+		<p></p>
+<p>CryptoCurrency Trade.</p>
+<p>Business Intelligence.</p>
+<p>Market Analysis.</p>
+<p>Real Time Trade & Information.</p>
+<p>Data Mining.</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+</yt>
+        </div><!-- /#content -->
+    </div><!-- /.container -->
+</div><!-- /#main -->
+</s>
+<script>
+$(document).ready(function(){
+
+    /** 
+     * This part does the "fixed navigation after scroll" functionality
+     * We use the jQuery function scroll() to recalculate our variables as the 
+     * page is scrolled/
+     */
+    $(window).scroll(function(){
+        var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
+        var div_top = $('#nav-anchor').offset().top;
+            if (window_top > div_top) {
+                $('nav').addClass('stick');
+            } else {
+                $('nav').removeClass('stick');
+            }
+    });
+
+    /**
+     * This part causes smooth scrolling using scrollto.js
+     * We target all a tags inside the nav, and apply the scrollto.js to it.
+     */
+    $("nav a").click(function(evn){
+        evn.preventDefault();
+        $('html,body').scrollTo(this.hash, this.hash); 
+    });
+
+    /**
+     * This part handles the highlighting functionality.
+     * We use the scroll functionality again, some array creation and 
+     * manipulation, class adding and class removing, and conditional testing
+     */
+    var aChildren = $("nav li").children(); // find the a children of the list items
+    var aArray = []; // create the empty aArray
+    for (var i=0; i < aChildren.length; i++) {    
+        var aChild = aChildren[i];
+        var ahref = $(aChild).attr('href');
+        aArray.push(ahref);
+    } // this for loop fills the aArray with attribute href values
+
+    $(window).scroll(function(){
+        var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+        var windowHeight = $(window).height(); // get the height of the window
+        var docHeight = $(document).height();
+
+        for (var i=0; i < aArray.length; i++) {
+            var theID = aArray[i];
+            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+            var divHeight = $(theID).height(); // get the height of the div in question
+            if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                $("a[href='" + theID + "']").addClass("nav-active");
+            } else {
+                $("a[href='" + theID + "']").removeClass("nav-active");
+            }
+        }
+
+        if(windowPos + windowHeight == docHeight) {
+            if (!$("nav li:last-child a").hasClass("nav-active")) {
+                var navActiveCurrent = $(".nav-active").attr("href");
+                $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
+                $("nav li:last-child a").addClass("nav-active");
+            }
+        }
+    });
+</script>
+<an>
+</an>
+<R>
+<!-- TradingView Widget BEGIN -->
+<script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "width": 520,
+  "height": 610,
+  "symbol": "BTCUSD",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "White",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": true,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "details": true,
+  "hotlist": true,
+  "news": [
+    "headlines"
+  ],
+  "hideideasbutton": true
+});
+</script>
+<!-- TradingView Widget END -->
+</R>
+<div id="foo" style="background-color:#2F4F4F;color:white;padding:18px;width:80,height:80,">
+<div>
+  <h2>CONTACT</h2>
+  <p>feel free to send your details and we'll be in touch soon.</p>
+  <p><a href="mailto:Xtract.intelligence@yandex.com?Subject=my%20information" target="_top">mailto</a></p>
+<script>
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 1000) {
+        $('#foo').fadeIn('slow',function(){$(this).css({'width':'100px', 'height':'100px'});});
+    } else {
+        $('#foo').fadeOut('slow');
+    }
+});
+</script>
+</div>
+<box>
+<img src="https://www.shareicon.net/data/128x128/2017/01/24/876002_media_512x512.png" onclick="location.href = 'https://twitter.com/search?f=tweets&q=gammay.co.il&src=typd';">
+</box>
+</body></html>
+
+
+
+
+
+
+
+
+
+
