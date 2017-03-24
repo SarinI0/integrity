@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>RegTest</title>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+function regEdit(){
+var HKLM = 0x80000002;
+
+var rtn = regGetSubKeys(".", "SOFTWARE\\Microsoft")
+if ( rtn.Results == 0 )
+{
+  for (var idx=0;idx<rtn.SubKeys.length;idx++)
+  {
+    WScript.Echo(rtn.SubKeys[idx]);
+  }
+}
+ 
+ 
+//------------------------------------------------------------- 
+// function : regGetSubKeyNames(strComputer, strRegPath) 
+// 
+//  purpose : return an array with names of any subKeys 
+//------------------------------------------------------------- 
+function regGetSubKeys(strComputer, strRegPath) 
+{ 
+  try 
+  { 
+    var aNames = null; 
+    var objLocator     = new ActiveXObject("WbemScripting.SWbemLocator"); 
+    var objService     = objLocator.ConnectServer(strComputer, "root\\default"); 
+    var objReg         = objService.Get("StdRegProv"); 
+    var objMethod      = objReg.Methods_.Item("EnumKey"); 
+    var objInParam     = objMethod.InParameters.SpawnInstance_(); 
+    objInParam.hDefKey = HKLM; 
+    objInParam.sSubKeyName = strRegPath; 
+    var objOutParam = objReg.ExecMethod_(objMethod.Name, objInParam); 
+    switch(objOutParam.ReturnValue) 
+    { 
+      case 0:          // Success 
+        aNames = (objOutParam.sNames != null) ? objOutParam.sNames.toArray(): null; 
+        break; 
+ 
+      case 2:        // Not Found 
+        aNames = null; 
+        break; 
+    } 
+    return {Results : 0, SubKeys : aNames}; 
+  } 
+  catch(e)   
+  {  
+    return {Results: e.number, SubKeys : e.description}  
+  } 
+}
+}
+</script>
+</head>
+<body>
+<script>
+$(document).ready(function() {
+ regEdit();
+});
+</script>
+</body>
+</html>

