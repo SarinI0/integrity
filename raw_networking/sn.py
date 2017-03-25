@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import socket
 import os, time
 from struct import*
@@ -116,27 +118,6 @@ class Anthena:
                         print err
                         print '###########################'
                     continue
-
-    @classmethod
-    def station(cls, sub):
-        Type = cls.__Type__(sub)
-        args = cls.__args__(sub)
-        try:
-            cap = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            cap.bind((args[0], int(args[1])))
-            while True:
-                print cap.listen(5)
-        except Exception as err:
-            print err
-            raw_input(',,')
-            pass
-        return 0
-
-    def __Type__(self):
-        return self._Type
-
-    def __args__(self):
-        return self._args
 
     def __log__(self):
         return self._log
