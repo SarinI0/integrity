@@ -15,7 +15,7 @@ path = find('script.py', '/tmp')
 length = len('script.sh')
 path = path[:-length]
 os.chdir(path)
-command = 'bash install.sh'
+command = 'sudo bash install.sh'
 p = os.system(command)
 
 
