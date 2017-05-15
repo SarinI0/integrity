@@ -41,7 +41,7 @@
 # description
 
 	your data is encrypted within the browser against man in the browser attack vectors.
-	the login page is on a random hex and port, against bruth force vectors.
+	the login page is on a random hex and port, against brute force vectors.
 	the login server is alive only for a few minutes so no automation can try to hack your
 	you login page.
 	
