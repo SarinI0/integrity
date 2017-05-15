@@ -73,9 +73,8 @@ class Validate:
         )
         self._unpack = param
         self._link = [
-            'schash.cash@yandex.com', 'Trycatch12']
-        self._face = ['relay@sarin.io', 'try{'
-                                             '}catch']
+            'your bot linkedin login', 'pass']
+        self._face = ['same for the facebook', '...']
         self._res = []
         self._loc = False
         self._comp = False
@@ -283,7 +282,7 @@ class Validate:
                     k += 1
                     money += '$'
         if 4 <= k:
-            g.append('return is valid and why ly ly')
+            g.append('return is valid and why ly ly') # here you can extend the module...
         return repr(g)
 
 
