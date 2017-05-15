@@ -266,7 +266,7 @@ server.mount_proc '/' + $mou + '/validation' do |req, res|
     puts valid.to_s.include? 'return is valid and why ly ly'
     if valid.to_s.include? 'return is valid and why ly ly'
        rep = '<p style="color:white; font-size: 24px;">an email was sent to activate your account,</p><p style="color:white; font-size: 24px;"> (chack your spam if its not in your inbox)...</p>'
-       Open3.popen2e('sudo python /home/yt/integrity/python/Send.py ' + $mou +" " + $port.to_s)
+       Open3.popen2e('sudo python ' + $pt+'utils/Send.py ' + $mou +" " + $port.to_s + ' ' +$pt+'log/'+$mou)
     else
        rep = '<p style="color:white; font-size: 24px;">we couldnt verify your identity</p>'
     end
