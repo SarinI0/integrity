@@ -118,30 +118,15 @@ file_names.each do |file_name|
 end
 
 if $main
-	$resdef = '
-	<html>
-	<head>
-	<title>
-	</title>
-	<script> window.location = http://'+$host+":"+$port+'/'+$mou+'/login";</script>
-	<head>
-	<body>
-	<script> window.location = http://'+$port+'/'+$mou+'/login";</script>
-	</body>
-	</html>
+	$resdef = '<html><head><title></title>
+<script> window.location = http://'+$host+":"+$port+'/'+$mou+'/login";</script><head>
+<body><script> window.location = http://'+$port+'/'+$mou+'/login";</script></body></html>
 	'
 else
-        $resdef = '
-	<html>
-	<head>
-	<title>
-	</title>
-	<script> window.location = http://'+$ip+":"+$host+'/'+$mou+'/login";</script>
-	<head>
-	<body>
-	<script> window.location = http://'+$ip+":"+$host+'/'+$mou+'/login";</script>
-	</body>
-	</html>
+        $resdef = '<html><head><title></title>
+<script> window.location = http://'+$ip+":"+$host+'/'+$mou+'/login";</script><head>
+	<body><script> window.location = http://'+$ip+":"+$host+'/'+$mou+'/login";</script>
+</body></html>
 	'
 end
 
