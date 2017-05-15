@@ -10,6 +10,7 @@ sudo apt-get install build-essential ruby-dev libpcap-dev -y
 sudo gem install rubysl-open3 -y
 sudo gem install twilio-ruby -y
 sudo gem install shellex -y
+sudo python config.py
 
 
 
