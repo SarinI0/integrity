@@ -70,7 +70,7 @@ class Transactions:
             conn.commit()
             conn.close()
 
-if __name__ == "__main__":
+if __debug__:
 	tr = Transactions()
 	tr.create(path+"st2.sqlite3")
 
