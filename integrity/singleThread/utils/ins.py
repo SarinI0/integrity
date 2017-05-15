@@ -36,7 +36,6 @@ class Transactions:
         argv = repr(tuple(args))
         dbs = [path+'st2.sqlite3']
         for db in dbs:
-	    print "...."
             conn = sqlite3.connect(db)
             c = conn.cursor()
             execv = "INSERT INTO " \
