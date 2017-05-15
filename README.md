@@ -59,12 +59,13 @@
 	to easlly monitor your traffic, and block unwanted traffic to ytour servers.
 
 # Installation
-============
+
+
 **essentials**
 
-a running up-to-date jre
-python
-ruby
+	a running up-to-date jre
+	python
+	ruby
 
 **Dependencies**
 
