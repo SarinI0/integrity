@@ -3,7 +3,6 @@
 # -*- coding: utf-8 -*-
 
 import os, sys, subprocess
-import pandas as pd
 import sqlite3
 
 pt = os.getcwd()
