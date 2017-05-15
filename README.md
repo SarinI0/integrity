@@ -1,3 +1,4 @@
+<img src="https://implyingrigged.info/w/images/thumb/5/53/Int_logo.png/250px-Int_logo.png" style="height:50px;width:50px;"></img>
 # integrity
 	modular, portable and easily extensible anti-phishing login plugin,
 	chack out https://sarin.io/int for the docs.
