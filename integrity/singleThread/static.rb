@@ -301,14 +301,14 @@ server.mount_proc '/' + mou + '/activate' do |req, res|
          end
          puts $active
          $active = rand(10 ** 5).to_s
-         account_sid = 'AC8a746bb57f1332aca6f47efeab26e62d' # your account sid validation.
-         auth_token = '2bc35bdeb9b733d81d94caac1eb2c9be' # your auth token for phone validation.
+         account_sid = '........' # your account sid validation.  optional..
+         auth_token = '.........' # your auth token for phone validation.
          if (number != '') and ($T == 0)
            $T += 1
            @client = Twilio::REST::Client.new account_sid, auth_token 
       
            @client.account.messages.create(
-             from: '+19072684587',
+             from: '+....',
              to: number,
              body: $active
            )
