@@ -24,7 +24,7 @@
     </tr>
     <tr>
         <th>Twitter</th>
-        <td><a href="https://sarin.io">@Sarin</a></td>
+        <td><a href="https://twitter.com/Sarin_io">@Sarin</a></td>
     </tr>
     <tr>
         <th>Copyright</th>
