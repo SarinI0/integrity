@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 os.chdir('/tmp')
 cmd = ['git init','git clone https://github.com/SarinI0/integrity.git']
