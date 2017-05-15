@@ -1,3 +1,5 @@
+# docs docs available tomorrow!
+
 <img src="https://implyingrigged.info/w/images/thumb/5/53/Int_logo.png/250px-Int_logo.png" style="height:20px;width:20px;"></img>
 # integrity
 	modular, portable and easily extensible anti-phishing login plugin,
