@@ -35,8 +35,6 @@
         <td>MIT - (see LICENSE file)</td>
     </tr>
 </table>
-	
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/U22dJD20SWA/0.jpg)](http://www.youtube.com/watch?v=U22dJD20SWA "Video Title")
 
 # description
 
@@ -57,6 +55,8 @@
 	
 	another Advantage is that all your login .logs are centralized in the same place,
 	to easlly monitor your traffic, and block unwanted traffic to your servers.
+	
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/U22dJD20SWA/0.jpg)](http://www.youtube.com/watch?v=U22dJD20SWA "Video Title")
 
 # Installation
 
