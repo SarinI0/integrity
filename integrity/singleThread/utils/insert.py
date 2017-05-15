@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import os, sys, subprocess
-import pandas as pd
 import sqlite3
 
 pt = os.getcwd()
@@ -71,29 +70,9 @@ class Transactions:
             conn.commit()
             conn.close()
 
-    @staticmethod
-    def drop(pa):
-        db = sqlite3.connect(pa)
-        cursor = db.cursor()
-        cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-        tables = cursor.fetchall()
-        for table_name in tables:
-            table_name = table_name[0]
-            table = pd.read_sql_query("SELECT * from %s" % table_name, db)
-            print(repr(table))
-
-    @staticmethod
-    def dele(pa,param):
-        db = sqlite3.connect(pa)
-        cursor = db.cursor()
-        cursor.execute('DELETE FROM ninja WHERE xyz="' +param+'";')
-        db.commit()
-        db.close()
-
 if __name__ == "__main__":
 	tr = Transactions()
 	tr.create(path+"st2.sqlite3")
-	tr.drop(path+"st2.sqlite3")
 
 
 
