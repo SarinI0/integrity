@@ -99,4 +99,4 @@ reffer to the site for more info.
 Documentation and Examples
 ============
 
-Please refer to the [official website](https://sarin.io/int).
+Please refer to the [official website](https://sarin.io/).
