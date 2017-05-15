@@ -1,0 +1,46 @@
+1492953892105	geckodriver	INFO	Listening on 127.0.0.1:46057
+1492953893193	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.V7oJhfD8LBWB
+1492953893195	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1492953893198	geckodriver::marionette	INFO	Connecting to Marionette on localhost:34233
+1492953895703	Marionette	INFO	Listening on port 34233
+1492953895846	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492953896378	geckodriver	INFO	Listening on 127.0.0.1:43989
+1492953897449	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.EbuhPOxov5rO
+1492953897451	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1492953897453	geckodriver::marionette	INFO	Connecting to Marionette on localhost:32996
+1492953900201	Marionette	INFO	Listening on port 32996
+1492953900297	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492954053206	geckodriver	INFO	Listening on 127.0.0.1:41942
+1492954054257	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.4M8Mytdus0oK
+1492954054258	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1492954054261	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38614
+1492954056881	Marionette	INFO	Listening on port 38614
+1492954057001	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492954057591	geckodriver	INFO	Listening on 127.0.0.1:45054
+1492954058644	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.XczGFpit6s9p
+1492954058645	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1492954058646	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46607
+1492954061312	Marionette	INFO	Listening on port 46607
+1492954061398	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4400FA,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 71: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4400FA,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 71: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4400FA,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 71: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0048,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4400A8,name=PContent::Msg_ConsoleMessage) Channel closing: too late to send/recv, messages will be lost
+

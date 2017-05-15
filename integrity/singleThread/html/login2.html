@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</meta>
+<title> login </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    document.getElementById("myNav").style.width = "100%";
+});
+</script>
+<script>
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function digest(val){
+      var y = String(getRndInteger(796,983))
+      var re = "";
+      re += y;
+      for (j=0; j < val.length; j++){
+		re += String(val.charCodeAt(j))
+                re += y;
+     }
+     return re;
+}
+
+function pressed(e)
+{
+    if(e.keyCode === 13)
+    {
+        document.getElementById("is").value = digest(document.getElementById("is").value);
+    }
+}
+$(document).ready(function(){
+
+    $(document).bind('keypress',pressed);
+});
+</script>
+<style>
+.topnav {
+  overflow: hidden;
+  background-color:#808080;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: 	#00FFFF;
+}
+
+.topnav #sub{
+      position: relative;
+      left: 90%;
+}
+
+.topnav a.active {
+    background-color: black;
+    color: 	#00FFFF;
+}
+.topnav input[type=text], select {
+    position: relative;
+    width: 100%;
+    left: 90%;
+    padding: 40px 40px;
+    margin: -20px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+}
+ul.topnav li a:hover {background-color: #555;}
+ul.topnav li.icon {display: none;}
+.overlay {    
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+body {
+    background-color: black;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a>Sarin Accounts</a>
+  <a href="/">Home</a>
+</div>
+<div id="myNav" class="overlay">
+<div class="overlay-content">
+<p style="color:white; font-size: 40px;">Login</p> 
+<p style="color:white; font-size: 24px;">enter password</p>
+<form id="sub">
+  <input id="is" type="password" maxlength="20" name="is" required><br>
+  <p>&nbsp;</p>
+</form>
+<p>&nbsp;</p>
+<img src="https://cdn3.iconfinder.com/data/icons/business-management-35/512/4-128.png">
+<p style="color:white; font-size: 16px;">Sarin.io</p>
+<p style="color:white; font-size: 16px;">&nbsp; ©<p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</body>
+</html>
