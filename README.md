@@ -1,5 +1,4 @@
 # integrity
 	an easy 
 	
-[linkname]()
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/U22dJD20SWA/0.jpg)](https://www.youtube.com/watch?v=U22dJD20SWA)
+![demo](https://github.com/SarinI0/integrity/blob/master/integrity/Secure-1.ogv)
