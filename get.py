@@ -17,3 +17,5 @@ path = path[:-length]
 os.chdir(path)
 command = 'bash install.sh'
 p = os.system(command)
+
+
