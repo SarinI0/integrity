@@ -11,8 +11,8 @@ def find(name, path):
     for root, dirs, files in os.walk(path):
         if name in files:
             return os.path.join(root, name)
-path = find('script.py', '/tmp')
-length = len('script.sh')
+path = find('install.sh', '/tmp')
+length = len('install.sh')
 path = path[:-length]
 os.chdir(path)
 command = 'sudo bash install.sh'
