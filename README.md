@@ -86,9 +86,6 @@ reffer to the site for more info.
     cd integrity
     sudo bash install.sh
 
-Documentation and Examples
-============
-
 # important 
 	you need to review the code and insert your personal details,
 	when needed, we didnt want to include that part in the config.py
@@ -98,5 +95,8 @@ Documentation and Examples
 	Another thing, when running the software you have to run both 
 	run.py & run2.py,
 	other wise your Threads wont be killed.
+
+Documentation and Examples
+============
 
 Please refer to the [official website](https://sarin.io).
