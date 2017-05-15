@@ -1,6 +1,39 @@
 # integrity
 	modular, portable and easily extensible anti-phishing login plugin,
 	chack out https://sarin.io/int for the docs.
+<table>
+    <tr>
+        <th>Homepage</th>
+        <td><a href="https://sarin.io/int">https://sarin.io/int</a></td>
+    </tr>
+    <tr>
+        <th>Blog</th>
+        <td><a href="log.sarin.io">log.sarin.io</a></td>
+    <tr>
+        <th>Github</th>
+        <td><a href="https://github.com/SarinI0/integrity">https://github.com/SarinI0/integrity</a></td>
+     <tr/>
+    <tr>
+        <th>Documentation</th>
+        <td><a href="https://sarin.io/int/docs/">https://sarin.io/int/docs/</a></td>
+	</tr>
+    <tr>
+       <th>Author</th>
+       <td><a href="https://sarin.io">The-Sarin-project</a> (<a href="https://sarin.io">@Sarin</a>)</td>
+    </tr>
+    <tr>
+        <th>Twitter</th>
+        <td><a href="https://sarin.io">@Sarin</a></td>
+    </tr>
+    <tr>
+        <th>Copyright</th>
+        <td>2017-2020 The-Sarin-project</td>
+    </tr>
+    <tr>
+        <th>License</th>
+        <td>MIT - (see LICENSE file)</td>
+    </tr>
+</table>
 	
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/U22dJD20SWA/0.jpg)](http://www.youtube.com/watch?v=U22dJD20SWA "Video Title")
 
