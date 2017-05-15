@@ -53,10 +53,10 @@
 	you got a login portal running on your java local machine, on a port you specified
 	(read the docs), all you need to do is to change your login href, at your html page
 	to the address that the Balancer.jar is working on and you got the all machanisem 
-	going for you.
+	going for ya.
 	
 	another Advantage is that all your login .logs are centralized in the same place,
-	to easlly monitor your traffic, and block unwanted traffic to ytour servers.
+	to easlly monitor your traffic, and block unwanted traffic to your servers.
 
 # Installation
 
@@ -89,4 +89,4 @@ reffer to the site for more info.
 Documentation and Examples
 ============
 
-Please refer to the [official website](https://sarin.io/int/docs/).
+Please refer to the [official website](https://sarin.io).
