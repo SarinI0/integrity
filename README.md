@@ -1,7 +1,7 @@
 <img src="https://implyingrigged.info/w/images/thumb/5/53/Int_logo.png/250px-Int_logo.png" style="height:20px;width:20px;"></img>
 # integrity
 	modular, portable and easily extensible anti-phishing login plugin,
-	chack out https://sarin.io/int for the docs.
+	chack out https://sarin.io/int/docs for the docs.
 <table>
     <tr>
         <th>Homepage</th>
@@ -57,3 +57,35 @@
 	
 	another Advantage is that all your login .logs are centralized in the same place,
 	to easlly monitor your traffic, and block unwanted traffic to ytour servers.
+
+# Installation
+============
+**essentials**
+
+a running up-to-date jre
+python
+ruby
+
+**Dependencies**
+
+All other dependencies will be automatically installed through the installation file system but in some case you might need to install some system
+dependency in order to make everything work:
+
+reffer to the site for more info.
+
+**Stable Release **
+
+    download the get.py file 
+    and run as root:
+    sudo python get.py
+
+**From Source**
+
+    git clone https://github.com/SarinI0/integrity
+    cd integrity
+    sudo bash install.sh
+
+Documentation and Examples
+============
+
+Please refer to the [official website](https://sarin.io/int/docs/).
