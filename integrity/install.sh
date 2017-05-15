@@ -26,7 +26,7 @@ do
 done
 
 sudo apt-cache search beautifulsoup
-sudo apt-get install  -y
+sudo apt-get install python-bs4 -y
 sudo python config.py
 
 
