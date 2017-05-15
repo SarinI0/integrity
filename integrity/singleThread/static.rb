@@ -15,6 +15,16 @@ require 'twilio-ruby'
 require 'socket'
 require 'openssl'
 
+module OpenURI
+  class << self
+    def redirectable?(uri1, uri2)
+      a, b = uri1.scheme.downcase, uri2.scheme.downcase
+      a == b || (a == 'http' && b == 'https')
+      a == b || (a == 'https' && b == 'http')
+    end
+  end
+end
+
 $pt = File.expand_path('../', __FILE__).to_s
 $pt += '/'
 
@@ -158,17 +168,6 @@ lines.each do |cn|
 end
 
 $Sup = first + middle + cont + second
-
-
-module OpenURI
-  class << self
-    def redirectable?(uri1, uri2)
-      a, b = uri1.scheme.downcase, uri2.scheme.downcase
-      a == b || (a == 'http' && b == 'https')
-      a == b || (a == 'https' && b == 'http')
-    end
-  end
-end
 
 server = WEBrick::HTTPServer.new :Port => $port.to_i,
                                  :Host => $ip,
