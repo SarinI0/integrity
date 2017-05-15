@@ -43,7 +43,7 @@ class Transactions:
                     "{tn} " \
                     "({ml} , {xyz} , {cunt} , {nim} ," \
                     " {tits}, {hom} , {fr} , {ct} , {pl}, {zp}, {iip}) VALUES" + \
-                    "('relay@sarin.io','Trycatch12','t','t','t','t','t','t','t','t','t')"
+                    argv
             try:
                 c.execute(execv. \
                         format(tn=table_name,
