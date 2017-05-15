@@ -47,7 +47,7 @@
 	that is in this project, in addition, you can change the varification parameters for the
 	varification automation, easlly extensible with caffe or any other ML python librarys.
 	
-	The installation is straight forward, Once you run the run.sh, after the installation,
+	The installation is straight forward, Once you run the run.py & run2.py, after the installation,
 	you got a login portal running on your java local machine, on a port you specified
 	(read the docs), all you need to do is to change your login href, at your html page
 	to the address that the Balancer.jar is working on and you got the all machanisem 
@@ -88,5 +88,15 @@ reffer to the site for more info.
 
 Documentation and Examples
 ============
+
+# important 
+	you need to review the code and insert your personal details,
+	when needed, we didnt want to include that part in the config.py
+	file, cuz that's personal data, and you should insert that on your own,
+	that's login details company details etc,
+	
+	Another thing, when running the software you have to run both 
+	run.py & run2.py,
+	other wise your Threads wont be killed.
 
 Please refer to the [official website](https://sarin.io).
