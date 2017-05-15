@@ -17,7 +17,6 @@ require 'openssl'
 
 $pt = File.expand_path('../', __FILE__).to_s
 $pt += '/'
-p $pt
 
 inp = ARGV
 if inp.length != 5 
