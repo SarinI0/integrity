@@ -10,3 +10,5 @@ os.system(execv)
 os.chdir(pa)
 os.system("sudo rm insert.py")
 os.chdir(pt)
+
+
