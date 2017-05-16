@@ -11,7 +11,7 @@
     </tr>
     <tr>
         <th>Blog</th>
-        <td><a href="log.sarin.io">log.sarin.io</a></td>
+        <td><a href="https://sarin.io/blog">log.sarin.io</a></td>
     <tr>
         <th>Github</th>
         <td><a href="https://github.com/SarinI0/integrity">https://github.com/SarinI0/integrity</a></td>
