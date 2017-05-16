@@ -18,7 +18,7 @@
      <tr/>
     <tr>
         <th>Documentation</th>
-        <td><a href="https://sarin.io/int/docs/">https://sarin.io/int/docs/</a></td>
+        <td><a href="https://sarin.io/int/">https://sarin.io/int/docs/</a></td>
 	</tr>
     <tr>
        <th>Author</th>
